@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-const Container = styled.h1`
+const Container = styled.section`
   h1 {
     color: grey;
   }
@@ -21,6 +21,11 @@ export default function Home() {
         <li>
           <Link href="withparam/whatever">
             <a>withparam</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="withfetch">
+            <a>withdata fetch</a>
           </Link>
         </li>
       </ul>
