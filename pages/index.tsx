@@ -1,10 +1,29 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+import Link from "next/link";
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+const Container = styled.h1`
+  h1 {
+    color: grey;
+  }
+`;
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <Container>
+      <h1>Home page</h1>
+
+      <ul>
+        <li>
+          <Link href="sample">
+            <a>sample</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="withparam/whatever">
+            <a>withparam</a>
+          </Link>
+        </li>
+      </ul>
+    </Container>
+  );
 }
